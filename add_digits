@@ -1,0 +1,13 @@
+# this programe is to add the digits of entered number
+def sumofdigits(n):
+    sum=0
+    while n>0:
+        d=n%10
+        sum=sum+d
+        n=n//10
+    return sum
+
+n=int(input("Enter number: "))
+sum=sumofdigits(n)
+print(f"Sum of Digits={sum}")
+print(f"Sum of Digits={sumofdigits(n)}")
